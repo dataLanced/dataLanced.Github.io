@@ -7,7 +7,7 @@ For this project, I explored what a good analytics PowerPoint presentation shoul
 
 ---
 
-#### [Linked File Project](/files/Mass_School_Project.md)
+#### [Linked File Project](/Mass_School_Project.md)
 <img src="images/Massachusetts Education Project.png?raw=true"/>
 In this project, I play the role of a newly hired data analyst for the Massachusetts Department of Education who is tasked to find particular trends and relationships amongst the variables in the dataset.
 
