@@ -2,7 +2,13 @@
 
 <img src="images/Massachusetts Education Project.png?raw=true"/>
 
-**Project description:** You can use this template to create projects in the future. Simply duplicate the page and change the text and images. 
+In this project, I will be assuming the role of a new hire on the Massachusetts Department of Education data team. I've been asked with doing the following:
+  - A report to show the school board the state of the school system 
+  - How does class size affect college admission?
+  - What are the top math schools in the state?
+  - What schools are struggling he most?
+
+This time, I'll be using Tableau to work with our already cleaned dataset and will provide the answer the questions that I've been assigned to uncover. Stay tuned!
 
 Be sure to follow *The Interesting Project Template* as shown in [**The Data Science Project Studio**](https://www.datacareerjumpstart.com/products/the-data-science-project-studio/categories/2150357707/posts/2158441592). 
 
