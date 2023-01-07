@@ -15,7 +15,7 @@ For this project, I explored what a good analytics PowerPoint presentation shoul
 
 ---
 #### [External Link Project](https://www.linkedin.com/pulse/doordash-project-lance-inimgba/)
-[<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://www.linkedin.com/pulse/doordash-project-lance-inimgba/)
+[<img src="images/Ifood Analytics Project.png?raw=true"/>](https://www.linkedin.com/pulse/doordash-project-lance-inimgba/)
 For this first project, I am playing the role of a junior data analyst for a popular Brazillian food delivery service called iFood. It's not comprehensive at all, but I do manage to uncover and convey some interesting insights. 
 
 
