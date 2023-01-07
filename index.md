@@ -14,9 +14,9 @@ Tolulope is the best
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
 
 ---
-#### [External Link Project](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)
-[<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)
-My final write up for Avery Smith's 21 Days To Data project covering New York City crime data. 
+#### [External Link Project](https://www.linkedin.com/pulse/doordash-project-lance-inimgba/)
+[<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://www.linkedin.com/pulse/doordash-project-lance-inimgba/)
+For this first project, I am playing the role of a junior data analyst for a popular Brazillian food delivery service called iFood. It's not comprehensive at all, but I do manage to uncover and convey some interesting insights. 
 
 
 ---
