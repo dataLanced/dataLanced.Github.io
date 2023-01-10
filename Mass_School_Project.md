@@ -6,11 +6,12 @@ In this project, I will be assuming the role of a new hire on the Massachusetts 
   - A report to show the school board the state of the school system 
   - How does class size affect college admission?
   - What are the top math schools in the state?
-  - What schools are struggling the most?
+  - What schools are struggling he most?
 
-This project is something that hits somewhat close to me since I also worked as an educator overseas. Therefore, I was quite curious in the contents of this dataset and the kind of picture would emerge as a result of determining the intertwining relationships between the columns of the dataset
+This project is something that hits somewhat close to me since I also worked as an educator overseas. Therefore, I was quite curious in the contents of this dataset and the relationships between the columns that could possibly be discovered.
 
-This time, I'll be using Tableau to work with our already cleaned dataset and will provide the answer the questions that I've been assigned to uncover. Stay tuned! 
+This time, I'll be using Tableau to work with our already cleaned dataset and will provide the answer the questions that I've been assigned to uncover. Stay tuned!
+
 
 Be sure to follow *The Interesting Project Template* as shown in [**The Data Science Project Studio**](https://www.datacareerjumpstart.com/products/the-data-science-project-studio/categories/2150357707/posts/2158441592). 
 
