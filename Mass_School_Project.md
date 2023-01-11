@@ -20,6 +20,7 @@ Now we're going to look at our data and begin our analysis of it by answering on
 
 To answer this question we'll need to look at the "% Graduated" column and organize our rows by the "School Name". Since we know that only the high schools will have non-null values in this column, we then filter out the null values and sort the values in ascending order. We'll just include the bottom 10 high schools in our analysis.
 
+<img src="images/Low Grad %.png?raw=true"/>
 
 
 
