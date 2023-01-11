@@ -14,6 +14,16 @@ This time, I'll be using Tableau to work with our already cleaned dataset and wi
 
 ### Data Analysis
 
+Now we're going to look at our data and begin our analysis of it by answering one of the questions that we are were assigned:
+
+#### What schools are struggling the most?
+
+To answer this question we'll need to look at the "% Graduated" column and organize our rows by the "School Name". Since we know that only the high schools will have non-null values in this column, we then filter out the null values and sort the values in ascending order. We'll just include the bottom 10 high schools in our analysis.
+
+
+
+
+
 
 Be sure to follow *The Interesting Project Template* as shown in [**The Data Science Project Studio**](https://www.datacareerjumpstart.com/products/the-data-science-project-studio/categories/2150357707/posts/2158441592). 
 
