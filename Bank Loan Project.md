@@ -4,16 +4,16 @@
 
 In this project, I will be assuming the role of a new hire on a bank they've asked me to fulfill these basic tasks as to get a feel from where I'm at:
 
--Return all rows of the table, but only the borrower & due to IDA column
--Only show the first 5 rows of the previous query 
--Abbreviate one of the column names so it's easier to write 
--Show us all transactions from Nicaragua (the country)?
--How many total transactions? 
--How many total transactions per country?? 
--What is the max owed to the IDA?
--What is the average service charge rate for a loan?
--Return all loans from the country of Honduras where the service charge rate is larger than 1 
--Who has the most loans? 
+- Return all rows of the table, but only the borrower & due to IDA column
+- Only show the first 5 rows of the previous query 
+- Abbreviate one of the column names so it's easier to write 
+- Show us all transactions from Nicaragua (the country)?
+- How many total transactions? 
+- How many total transactions per country?? 
+- What is the max owed to the IDA?
+- What is the average service charge rate for a loan?
+- Return all loans from the country of Honduras where the service charge rate is larger than 1 
+- Who has the most loans? 
 
 This project will be more of a walkthrough than anything else and at least prove (hopefully)that I have basic SQL skills if my other SQL projects don't convey that too well.
 
@@ -101,16 +101,16 @@ Using a combination of `COUNT`, `GROUP BY` and `ORDER BY`, we managed to determi
 
 As I specified in the beginning of this project, this was meant to be more of a walkthrough of basic SQL fundamentals than a super in-depth project. But in answering these questions:
 
--Return all rows of the table, but only the borrower & due to IDA column
--Only show the first 5 rows of the previous query 
--Abbreviate one of the column names so it's easier to write 
--Show us all transactions from Nicaragua (the country)?
--How many total transactions? 
--How many total transactions per country?? 
--What is the max owed to the IDA?
--What is the average service charge rate for a loan?
--Return all loans from the country of Honduras where the service charge rate is larger than 1 
--Who has the most loans?
+- Return all rows of the table, but only the borrower & due to IDA column
+- Only show the first 5 rows of the previous query 
+- Abbreviate one of the column names so it's easier to write 
+- Show us all transactions from Nicaragua (the country)?
+- How many total transactions? 
+- How many total transactions per country?? 
+- What is the max owed to the IDA?
+- What is the average service charge rate for a loan?
+- Return all loans from the country of Honduras where the service charge rate is larger than 1 
+- Who has the most loans?
 
 I feel like we've seen that SQL is more than capable of answering questions like these and even more complex questions, we definitely could. We would be able to do such things as group our information into the `region` column, answer questions such as which region has the most transactions/loans and use those findings to explore even more insights! In the future if I were to revisit this dataset, I would combine it with Python for getting rid of the nulls and dropping some rows (transactions) with a lot of null columns as I don't think we lose too much, by dropping them
 
