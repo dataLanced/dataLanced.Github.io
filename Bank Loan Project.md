@@ -81,11 +81,11 @@ This is another way to do it and we can also find out the country's name in this
 
 #### What is the average service charge rate for a loan?
 <img src="images/SQL Bank Project Images/8.png?raw=true"/>
-We use `AVG("Service Charge Rate") to get the very lengthy value of 0.7782559379949439. 
+We use `AVG("Service Charge Rate")` to get the very lengthy value of 0.7782559379949439. 
 
 So in the next screen I decided to round it to 2 decimal places
 <img src="images/SQL Bank Project Images/8.1.png?raw=true"/>
-In this more complicated query, I have to find the `AVG("Service Charge Rate") in a nested subquery before using a combination of `CAST` nested in `ROUND` to get our new rounded average. Note that in the outer query I use `LIMIT 1` o or else it would have displayed 0.78 in every row.
+In this more complicated query, I have to find the `AVG("Service Charge Rate")` in a nested subquery before using a combination of `CAST` nested in `ROUND` to get our new rounded average. Note that in the outer query I use `LIMIT 1` o or else it would have displayed 0.78 in every row.
 
 #### Return all loans from the country of Honduras where the service charge rate is larger than 1 
 <img src="images/SQL Bank Project Images/9.png?raw=true"/>
