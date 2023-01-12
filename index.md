@@ -7,14 +7,18 @@ For this project, I explored what a good analytics PowerPoint presentation shoul
 
 ---
 
-#### [Linked File Project](/Mass_School_Project.md)
+#### [Massachusetts Education Project](/Mass_School_Project.md)
 <img src="images/Massachusetts Education Project.png?raw=true"/>
 In this project, I play the role of a newly hired data analyst for the Massachusetts Department of Education who is tasked to find particular trends and relationships amongst the variables in the dataset.
 
 ---
-#### [External Link Project](https://www.linkedin.com/pulse/doordash-project-lance-inimgba/)
+#### [Ifood Analysis Project](https://www.linkedin.com/pulse/doordash-project-lance-inimgba/)
 [<img src="images/Ifood Analytics Project.png?raw=true"/>](https://www.linkedin.com/pulse/doordash-project-lance-inimgba/)
-For this first project, I am playing the role of a junior data analyst for a popular Brazillian food delivery service called iFood. It's not comprehensive at all, but I do manage to uncover and convey some interesting insights. 
+For this Excel-based project, I am playing the role of a junior data analyst for a popular Brazilian food delivery service called iFood. It's not comprehensive at all, but I do manage to uncover and convey some interesting insights. 
+
+
+
+
 
 
 
