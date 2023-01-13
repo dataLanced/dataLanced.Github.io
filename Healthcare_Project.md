@@ -4,8 +4,8 @@
 
 In this project we are going to play the level of a newly hired health care data analyst at a hospital and because our supervisor is busy, they have given us a lot of tasks to do 
 
-- Return all rows of the table, but only the borrower & due to IDA column
-- Only show the first 5 rows of the previous query 
+- What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
+- Try to find out which medical specialties have the highest number of procedures on average.
 - Abbreviate one of the column names so it's easier to write 
 - Show us all transactions from Nicaragua (the country)?
 - How many total transactions? 
@@ -42,10 +42,37 @@ There are 30 columns of data, but I will only go over the relevant ones that'll 
 
 To start out, first we're going to create a histogram! This might sound odd to see that because SQL isn't necessarily renowned for its visualization capabilities, but there is a query we can use to produce a histogram.
 
-#### Return all rows of the table, but only the borrower & due to IDA column
-<img src="images/SQL Bank Project Images/1.png?raw=true"/>
+<img src="images/SQL Healthcare Project/query1.png?raw=true"/>
 
-Table is outputted by `SELECT
+We use this query to output the histogram. Note that we are using `timespent` column as we're trying to determine whether the majority of our patients are spending less than 7 days in the hospital. Knowing that our patients are spending less than 7 days in the hospital can free up beds faster in the even of overcrowding and also save some money for both us and the patient! Let's print our histogram now.
+
+<img src="images/SQL Healthcare Project/histogram.png?raw=true"/>
+
+As we can see by the results, the majority of our patients do indeed spend less than 7 days in our hospital beds!
+
+---
+Now with this line of code we're going to check out the distinct values (or fields) in the `medical_specialty` column using the following query.
+<img src="images/SQL Healthcare Project/query2.png?raw=true"/>
+<img src="images/SQL Healthcare Project/output1.png?raw=true"/>
+
+I also counted the unique values in the `medical_specialty` column and it turns out that we have 73 distinct values.
+
+Now that we know what those are, let's create a query that groups all the values of `medical_specialty` together and find the average `num_procedures` per specialty. We also want to count how many patients there are per specialty (please note that one row in this dataset represents one patient).
+
+<img src="images/SQL Healthcare Project/query3.png?raw=true"/>
+
+And here are a few lines of the output
+
+<img src="images/SQL Healthcare Project/output2.png?raw=true"/>
+
+Not only does it look more organized now, but we are closer to our next goal of answering which specialties have the highest number of procedures on average. So let's say that our supervisor instructs us to filter down to specialties that have at least 50 patients and an average of at least 2.5 procedures per patient for a given specialty. With this we should have a great idea on what specialties to focus on! 
+
+So let's put this concept in to a query and see what we get.
+
+<img src="images/SQL Healthcare Project/query4.1.png?raw=true"/>
+<img src="images/SQL Healthcare Project/output3.png?raw=true"/>
+
+
 
 #### Only show the first 5 rows of the previous query 
 <img src="images/SQL Bank Project Images/2.png?raw=true"/>
