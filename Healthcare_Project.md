@@ -74,6 +74,13 @@ So let's put this concept in to a query and see what we get.
 
 Just as planned! We now have 5 specialites that were able to meet our rigorous criteria and as wek can see from both the `avg_procedures` and `rows_count` columns, a lot of patients are treated in these specialites and they get at least 2.5 procedures too. These are amazing results and I'm quite sure that the supervisor will be delighted with these results!
 
+---
+Next, our supervisor has asked us to check to see if there any discrepancies in treatment based on race. For this purpose, we will use the `num_lab_procedures` that patients from all racial backgrounds are receiving the highest quality treatment. The table that we have been using until now, `patient`, doesn't have any information that outlines a person's racial background. Therefore, we will use another table called `demographics` employ the SQL inner join technique along the shared `patient_nbr` column to ensure that we can properly align the demographic info of the new table to the parent table. The `patient_nbr` column is our primary key for both tables, so we know that the values present are all unique.  
+
+<img src="images/SQL Healthcare Project/query5.png?raw=true"/>
+
+For this query, we created a CTE and used it in a view to use for future reference and set up our join and the columns to be displayed from said join. Next we want to take 
+
 
 #### Only show the first 5 rows of the previous query 
 <img src="images/SQL Bank Project Images/2.png?raw=true"/>
