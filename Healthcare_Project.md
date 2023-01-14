@@ -79,7 +79,7 @@ Next, our supervisor has asked us to check to see if there any discrepancies in 
 
 <img src="images/SQL Healthcare Project/query5.png?raw=true"/>
 
-For this query, we created a CTE and used it in a view to use for future reference and set up our join and the columns to be displayed from said join. Next we want to take 
+For this query, we created a CTE and used it in a view to use for future reference and set up our join and the columns to be displayed from said join. Next we want to take that view and create a query that categorizes our database by race and use the take the average of `num_lab_procedures`and we can determine whether all of our patients are getting equal treatment.
 
 
 #### Only show the first 5 rows of the previous query 
