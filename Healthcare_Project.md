@@ -6,7 +6,7 @@ In this project we are going to play the level of a newly hired health care data
 
 - What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
 - Try to find out which medical specialties have the highest number of procedures on average.
-- Abbreviate one of the column names so it's easier to write 
+- Are there any racial discrepancies? (based on the number of lab procdures done)
 - Show us all transactions from Nicaragua (the country)?
 - How many total transactions? 
 - How many total transactions per country?? 
@@ -72,6 +72,7 @@ So let's put this concept in to a query and see what we get.
 <img src="images/SQL Healthcare Project/query4.1.png?raw=true"/>
 <img src="images/SQL Healthcare Project/output3.png?raw=true"/>
 
+Just as planned! We now have 5 specialites that were able to meet our rigorous criteria and as wek can see from both the `avg_procedures` and `rows_count` columns, a lot of patients are treated in these specialites and they get at least 2.5 procedures too. These are amazing results and I'm quite sure that the supervisor will be delighted with these results!
 
 
 #### Only show the first 5 rows of the previous query 
