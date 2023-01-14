@@ -7,13 +7,8 @@ In this project we are going to play the level of a newly hired health care data
 - What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
 - Try to find out which medical specialties have the highest number of procedures on average.
 - Are there any racial discrepancies? (based on the number of lab procdures done)
-- Show us all transactions from Nicaragua (the country)?
+- Do patients who get a lot of procedures stay longer in the hospital?
 - How many total transactions? 
-- How many total transactions per country?? 
-- What is the max owed to the IDA?
-- What is the average service charge rate for a loan?
-- Return all loans from the country of Honduras where the service charge rate is larger than 1 
-- Who has the most loans? 
 
 This project will be more of a walkthrough than anything else and at least prove (hopefully)that I have basic SQL skills if my other SQL projects don't convey that too well.
 
@@ -81,6 +76,17 @@ Next, our supervisor has asked us to check to see if there any discrepancies in 
 
 For this query, we created a CTE and used it in a view to use for future reference and set up our join and the columns to be displayed from said join. Next we want to take that view and create a query that categorizes our database by race and use the take the average of `num_lab_procedures`and we can determine whether all of our patients are getting equal treatment.
 
+Here is the query:
+
+<img src="images/SQL Healthcare Project/query6.png?raw=true"/>
+
+And the output:
+
+<img src="images/SQL Healthcare Project/output4.png?raw=true"/>
+
+From these results, we can determine that there aren't any outliers that would indicate the presence of preferential treatment due to racial makeup. Now let's move further in our analysis.
+
+---
 
 #### Only show the first 5 rows of the previous query 
 <img src="images/SQL Bank Project Images/2.png?raw=true"/>
