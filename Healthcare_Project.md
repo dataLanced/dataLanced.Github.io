@@ -7,7 +7,7 @@ In this project we are going to play the level of a newly hired health care data
 - What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
 - Try to find out which medical specialties have the highest number of procedures on average.
 - Are there any racial discrepancies? (based on the number of lab procdures done)
-- Do patients who get a lot of procedures stay longer in the hospital?
+- Do patients who get a lot of procedures done stay longer in the hospital?
 - How many total transactions? 
 
 This project will be more of a walkthrough than anything else and at least prove (hopefully)that I have basic SQL skills if my other SQL projects don't convey that too well.
@@ -87,6 +87,16 @@ And the output:
 From these results, we can determine that there aren't any outliers that would indicate the presence of preferential treatment due to racial makeup. Now let's move further in our analysis.
 
 ---
+Next we were asked to see if patients that have a lot of procedures done tend to have longer stay times in the hospital. First, we run a query that gives a sense of the data distribution for the `num_lab_procedures` column.
+
+<img src="images/SQL Healthcare Project/query7.png?raw=true"/>
+
+
+<img src="images/SQL Healthcare Project/output5.png?raw=true"/>
+
+From the output, we can see that `num_lab_procedures` has an average value of around 43 procedures. With this knowledge, we can use a series of `CASE` statements to categorize our patients based on their `num_lab_procedures` value. If a value for `num_lab_procedures` falls within 0-24 it will be assigned the tag of "few", for 25-54: "average", for over 55: "many".
+
+Now we are going to create a query that creates these tags for every patient, groups all of them by these tags and looks at the average hospital stay per group. Now, let's look at that query and its output together
 
 #### Only show the first 5 rows of the previous query 
 <img src="images/SQL Bank Project Images/2.png?raw=true"/>
