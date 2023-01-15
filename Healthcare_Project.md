@@ -114,7 +114,7 @@ Next we've been asked to generate a query that will summarize the results of the
 
 "Patient **2383** was **Caucasian** and **was** readmitted. They had **21** medications and **32** lab procedures."
 
-Using a combination of `CONCAT` and `CASE`, we will be able to generate multiple summaries like this
+Using a combination of `CONCAT` and `CASE`, we will be able to generate multiple summaries like this. Here is the query and the output below:
 
 <img src="images/SQL Healthcare Project/query11.png?raw=true"/>
 <img src="images/SQL Healthcare Project/output9.png?raw=true"/>
