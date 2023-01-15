@@ -9,6 +9,7 @@ In this project we are going to play the level of a newly hired health care data
 - Are there any racial discrepancies? (based on the number of lab procdures done)
 - Do patients who get a lot of procedures done stay longer in the hospital?
 - We want to perform a medical test on any patient who is either African-American or had an "Up" value for metformin. Please help us compile a list of patients who   meet this criteria
+- Find "success stories" where patients who came into thie hospital with an emergency (`admission_type_id` is 1), but stayed less than the average time in the hospital 
 - We are asked to write a summary for the top 50 medical patients in a format like this: "Patient 2383 was Caucasian and was readmitted. They had 21 medications and 32 lab procedures."
 
 This project will be more of a walkthrough than anything else and at least prove (hopefully)that I have basic SQL skills if my other SQL projects don't convey that too well.
