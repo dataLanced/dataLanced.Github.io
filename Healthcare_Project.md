@@ -110,9 +110,14 @@ Next, I've been tasked to compile a list of patients who are either African-Amer
 <img src="images/SQL Healthcare Project/query8.png?raw=true"/>
 <img src="images/SQL Healthcare Project/output7.png?raw=true"/>
 ---
-Next we've been asked to generate a query that will summarize the results of the top 50 medicated patients along with the number of lab procedures that they had(table will be ordered by `num_medications`and afterwards `num_lab_procedures`). The statment must be in this format: "Patient **2383** was **Caucasian** and **was** readmitted. They had **21** medications and **32** lab procedures."
+Next we've been asked to generate a query that will summarize the results of the top 50 medicated patients along with the number of lab procedures that they had(table will be ordered by `num_medications`and afterwards `num_lab_procedures`). The output of our queries should produce values in this format: 
 
+"Patient **2383** was **Caucasian** and **was** readmitted. They had **21** medications and **32** lab procedures."
 
+Using a combination of `CONCAT` and `CASE`, we will be able to generate multiple summaries like this
+
+<img src="images/SQL Healthcare Project/query11.png?raw=true"/>
+<img src="images/SQL Healthcare Project/output9.png?raw=true"/>
 
 
 ---
