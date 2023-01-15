@@ -8,7 +8,8 @@ In this project we are going to play the level of a newly hired health care data
 - Try to find out which medical specialties have the highest number of procedures on average.
 - Are there any racial discrepancies? (based on the number of lab procdures done)
 - Do patients who get a lot of procedures done stay longer in the hospital?
-- How many total transactions? 
+- We want to perform a medical test on any patient who is either African-American or had an "Up" value for metformin. Please help us compile a list of patients who   meet this criteria
+- We are asked to write a summary for the top 50 medical patients in a format like this: "Patient 2383 was Caucasian and was readmitted. They had 21 medications and 32 lab procedures."
 
 This project will be more of a walkthrough than anything else and at least prove (hopefully)that I have basic SQL skills if my other SQL projects don't convey that too well.
 
@@ -98,53 +99,21 @@ From the output, we can see that `num_lab_procedures` has an average value of ar
 
 Now we are going to create a query that creates these tags for every patient, groups all of them by these tags and looks at the average hospital stay per group. Now, let's look at that query and its output together
 
-#### Only show the first 5 rows of the previous query 
-<img src="images/SQL Bank Project Images/2.png?raw=true"/>
+<img src="images/SQL Healthcare Project/query7.png?raw=true"/>
+<img src="images/SQL Healthcare Project/output6.png?raw=true"/>
 
-The `LIMIT 5` portion on the query in the screenshot is what limits the output to only the first 5 rows.
+From what we have seen, we can now draw a positive correlation between time spent in the hospital and how many procedures that they have. The longer a patient stays at a hospital the more procedures they have and the shorter their stay, the fewer procedures they have.
 
-#### Abbreviate one of the column names so it's easier to write
-<img src="images/SQL Bank Project Images/3.1.png?raw=true"/>
-The standard way of creating an alias for a column
+---
+Next, I've been tasked to compile a list of patients who are either African-American or have a value of "Up" for the `metformin` column. Here is a simple query that we can use, making use of the `UNION` function. Some lines of the output will also be displayed.
 
-<img src="images/SQL Bank Project Images/3.png?raw=true"/>
-An alternative but slightly more congested approach to making an alias. It's not bad in shorter and simpler queries though.
-
-
-#### Show us all transactions from Nicaragua (the country)?
-<img src="images/SQL Bank Project Images/4.png?raw=true"/>
-Accomplished by the `WHERE = 'Nicaragua` line
-
-#### How many total transactions? 
-<img src="images/SQL Bank Project Images/5.png?raw=true"/>
-The `COUNT` function counts the amount of rows to give us this answer. Remember, that each row represents a single transaction.
-
-#### How many total transactions per country?
-<img src="images/SQL Bank Project Images/6.png?raw=true"/>
-We use the `COUNT` function once again, but we also use `GROUP BY country` to ensure that we're returning the number of transactions per country.
-
-#### What is the max owed to the IDA?
-<img src="images/SQL Bank Project Images/7.png?raw=true"/>
-We use `MAX("Due to IDA")` to get the maximum value that is owed to the IDA
-<img src="images/SQL Bank Project Images/7.1.png?raw=true"/>
-This is another way to do it and we can also find out the country's name in this method.
+<img src="images/SQL Healthcare Project/query8.png?raw=true"/>
+<img src="images/SQL Healthcare Project/output7.png?raw=true"/>
+---
 
 
-#### What is the average service charge rate for a loan?
-<img src="images/SQL Bank Project Images/8.png?raw=true"/>
-We use `AVG("Service Charge Rate")` to get the very lengthy value of 0.7782559379949439. 
 
-So in the next screen I decided to round it to 2 decimal places
-<img src="images/SQL Bank Project Images/8.1.png?raw=true"/>
-In this more complicated query, I have to find the `AVG("Service Charge Rate")` in a nested subquery before using a combination of `CAST` nested in `ROUND` to get our new rounded average. Note that in the outer query I use `LIMIT 1` o or else it would have displayed 0.78 in every row.
 
-#### Return all loans from the country of Honduras where the service charge rate is larger than 1 
-<img src="images/SQL Bank Project Images/9.png?raw=true"/>
-We use `WHERE = "Honduras" AND "Service Charge Rate" > 1 to filter out only the rows in which both conditions are true.
-
-#### Who has the most loans? 
-<img src="images/SQL Bank Project Images/10.png?raw=true"/>
-Using a combination of `COUNT`, `GROUP BY` and `ORDER BY`, we managed to determine that India has the most loans.
 
 ---
 
