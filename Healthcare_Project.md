@@ -25,11 +25,11 @@ For this project, we are using this [diabetic-focused dataset](https://archive.i
 ### Data Dictionary
 
 There are over 40 columns of data, so I will only go over the relevant ones that'll be most crucial to our data analysis for this project:
-- patient_nbr: An individual patient's identifier 
-- time_in_hospital: Number of days that a patient has spent in the hospital
-- num_procedures: Number of procedures that a patient has had
-- num_lab_procedures: Number of lab procedures that a patient has had
-- num_medications: Number of times that medications have been administered to a patient
+- `patient_nbr`: An individual patient's identifier 
+- `time_in_hospital`: Number of days that a patient has spent in the hospital
+- `num_procedures`: Number of procedures that a patient has had
+- `num_lab_procedures`: Number of lab procedures that a patient has had
+- `num_medications`: Number of times that medications have been administered to a patient
 
 Now let's get to our given tasks and our data analysis!
 
