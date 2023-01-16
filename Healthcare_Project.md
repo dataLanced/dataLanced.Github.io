@@ -14,7 +14,7 @@ In this project we are going to play the level of a newly hired health care data
 
 This project will be more of a walkthrough than anything else and at least prove (hopefully)that I have basic SQL skills if my other SQL projects don't convey that too well.
 
-### Why This Project and What the data set is?
+## Why This Project and What the data set is?
 
 The reason why I personally chose this dataset is because I have a keen interest in the financial sector and it is one of the domains that I have the most curiosity in working in. So I thought it would be a good exercise in getting my feet wet and get used to some of the columns and common terminology that I could possibly be seeing in financial datasets. Plus, I thought that this would be a pretty good bit of a SQL flex as I spend most of my time in Python, I just thought that a little bit of a SQL wouldn't hurt! 💪💪💪
 
@@ -27,7 +27,7 @@ The actual [dataset](https://finances.worldbank.org/Loans-and-Credits/IDA-Statem
 
 The [dataset](https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx) contains historical snapshots including the most recent snapshots of the dataset.
 
-#### Data Dictionary
+### Data Dictionary
 
 There are 30 columns of data, but I will only go over the relevant ones that'll be most crucial to our data analysis for this project:
 - Borrower: The representative of the borrower to which the Bank loan is made.
@@ -35,7 +35,9 @@ There are 30 columns of data, but I will only go over the relevant ones that'll 
 - Service Charge Rate: Current Interest rate or service charge applied to loan.
 - Due to IDA: Amount currently owed to the IDA
 
-### Data Analysis
+## Data Analysis
+
+### What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
 
 To start out, first we're going to create a histogram! This might sound odd to see that because SQL isn't necessarily renowned for its visualization capabilities, but there is a query we can use to produce a histogram.
 
@@ -48,6 +50,9 @@ We use this query to output the histogram. Note that we are using `timespent` co
 As we can see by the results, the majority of our patients do indeed spend less than 7 days in our hospital beds!
 
 ---
+
+### Try to find out which medical specialties have the highest number of procedures on average.
+
 Now with this line of code we're going to check out the distinct values (or fields) in the `medical_specialty` column using the following query.
 <img src="images/SQL Healthcare Project/query2.png?raw=true"/>
 <img src="images/SQL Healthcare Project/output1.png?raw=true"/>
@@ -72,6 +77,9 @@ So let's put this concept in to a query and see what we get.
 Just as planned! We now have 5 specialites that were able to meet our rigorous criteria and as wek can see from both the `avg_procedures` and `rows_count` columns, a lot of patients are treated in these specialites and they get at least 2.5 procedures too. These are amazing results and I'm quite sure that the supervisor will be delighted with these results!
 
 ---
+
+### Are there any racial discrepancies? (based on the number of lab procdures done)
+
 Next, our supervisor has asked us to check to see if there any discrepancies in treatment based on race. For this purpose, we will use the `num_lab_procedures` that patients from all racial backgrounds are receiving the highest quality treatment. The table that we have been using until now, `patient`, doesn't have any information that outlines a person's racial background. Therefore, we will use another table called `demographics` employ the SQL inner join technique along the shared `patient_nbr` column to ensure that we can properly align the demographic info of the new table to the parent table. The `patient_nbr` column is our primary key for both tables, so we know that the values present are all unique.  
 
 <img src="images/SQL Healthcare Project/query5.png?raw=true"/>
@@ -89,6 +97,9 @@ And the output:
 From these results, we can determine that there aren't any outliers that would indicate the presence of preferential treatment due to racial makeup. Now let's move further in our analysis.
 
 ---
+
+### Do patients who get a lot of procedures done stay longer in the hospital?
+
 Next we were asked to see if patients that have a lot of procedures done tend to have longer stay times in the hospital. First, we run a query that gives a sense of the data distribution for the `num_lab_procedures` column.
 
 <img src="images/SQL Healthcare Project/query7.png?raw=true"/>
@@ -106,6 +117,8 @@ Now we are going to create a query that creates these tags for every patient, gr
 From what we have seen, we can now draw a positive correlation between time spent in the hospital and how many procedures that they have. The longer a patient stays at a hospital the more procedures they have and the shorter their stay, the fewer procedures they have.
 
 ---
+### We want to perform a medical test on any patient who is either African-American or had an "Up" value for metformin. Please help us compile a list of patients who   meet this criteria
+
 Next, I've been tasked to compile a list of patients who are either African-American or have a value of "Up" for the `metformin` column. Here is a simple query that we can use, making use of the `UNION` function. Some lines of the output will also be displayed.
 
 <img src="images/SQL Healthcare Project/query8.png?raw=true"/>
@@ -125,10 +138,14 @@ Subqueries are a useful tool, but they can make things look messy if we have a l
 <img src="images/SQL Healthcare Project/query10.1.png?raw=true"/>
 <img src="images/SQL Healthcare Project/output11.png?raw=true"/>
 
+With the help of the `WITH` CTE our subquery has now been condensed from `(SELECT AVG(time_in_hospital) FROM health)` to just `(SELECT * FROM avg_time)`. 
+
+And we also have a nice list of "success story" patients to provide to our supervisor too!
+
 ---
 Next we've been asked to generate a query that will summarize the results of the top 50 medicated patients along with the number of lab procedures that they had(table will be ordered by `num_medications`and afterwards `num_lab_procedures`). The output of our queries should produce values in this format: 
 
-"Patient **2383** was **Caucasian** and **was** readmitted. They had **21** medications and **32** lab procedures."
+### We are asked to write a summary for the top 50 medical patients in a format like this: "Patient 2383 was Caucasian and was readmitted. They had 21 medications and 32 lab procedures."
 
 Using a combination of `CONCAT` and `CASE`, we will be able to generate multiple summaries like this. Here is the query and the output below:
 
