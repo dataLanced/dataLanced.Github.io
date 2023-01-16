@@ -25,11 +25,14 @@ For this project, we are using this [diabetic-focused dataset](https://archive.i
 
 ### Data Dictionary
 
-There are 30 columns of data, but I will only go over the relevant ones that'll be most crucial to our data analysis for this project:
-- Borrower: The representative of the borrower to which the Bank loan is made.
-- Country: Country to which loan has been issued. Loans to the IFC are included under the country “World”.
-- Service Charge Rate: Current Interest rate or service charge applied to loan.
-- Due to IDA: Amount currently owed to the IDA
+There are over 40 columns of data, so I will only go over the relevant ones that'll be most crucial to our data analysis for this project:
+- patient_nbr: An individual patient's identifier 
+- time_in_hospital: Number of days that a patient has spent in the hospital
+- num_procedures: Number of procedures that a patient has had
+- num_lab_procedures: Number of lab procedures that a patient has had
+- num_medications: Number of times that medications have been administered to a patient
+
+Now let's get to our given tasks and our data analysis!
 
 ## Data Analysis
 
@@ -39,7 +42,7 @@ To start out, first we're going to create a histogram! This might sound odd to s
 
 <img src="images/SQL Healthcare Project/query1.png?raw=true"/>
 
-We use this query to output the histogram. Note that we are using `timespent` column as we're trying to determine whether the majority of our patients are spending less than 7 days in the hospital. Knowing that our patients are spending less than 7 days in the hospital can free up beds faster in the even of overcrowding and also save some money for both us and the patient! Let's print our histogram now.
+We use this query to output the histogram. Note that we are using `time_in_hospital` column as we're trying to determine whether the majority of our patients are spending less than 7 days in the hospital. Knowing that our patients are spending less than 7 days in the hospital can free up beds faster in the even of overcrowding and also save some money for both us and the patient! Let's print our histogram now.
 
 <img src="images/SQL Healthcare Project/histogram.png?raw=true"/>
 
@@ -153,20 +156,17 @@ Using a combination of `CONCAT` and `CASE`, we will be able to generate multiple
 
 ## Recap/Conclusion
 
-As I specified in the beginning of this project, this was meant to be more of a walkthrough of basic SQL fundamentals than a super in-depth project. But in answering these questions:
+In conclusion, we set out to complete the tasks that our supervisor instructed us to and we've done just that. To review what was asked of us, let's refresh our memories with the below tasks:
 
-- Return all rows of the table, but only the borrower & due to IDA column
-- Only show the first 5 rows of the previous query 
-- Abbreviate one of the column names so it's easier to write 
-- Show us all transactions from Nicaragua (the country)?
-- How many total transactions? 
-- How many total transactions per country?? 
-- What is the max owed to the IDA?
-- What is the average service charge rate for a loan?
-- Return all loans from the country of Honduras where the service charge rate is larger than 1 
-- Who has the most loans?
+- What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
+- Try to find out which medical specialties have the highest number of procedures on average.
+- Are there any racial discrepancies? (based on the number of lab procdures done)
+- Do patients who get a lot of procedures done stay longer in the hospital?
+- We want to perform a medical test on any patient who is either African-American or had an "Up" value for metformin. Please help us compile a list of patients who   meet this criteria
+- Find "success stories" where patients who came into thie hospital with an emergency (`admission_type_id` is 1), but stayed less than the average time in the hospital 
+- We are asked to write a summary for the top 50 medical patients in a format like this: "Patient 2383 was Caucasian and was readmitted. They had 21 medications and 32 lab procedures."
 
-I feel like we've seen that SQL is more than capable of answering questions like these and even more complex questions, we definitely could. We would be able to do such things as group our information into the `region` column, answer questions such as which region has the most transactions/loans and use those findings to explore even more insights! In the future if I were to revisit this dataset, I would combine it with Python for getting rid of the nulls and dropping some rows (transactions) with a lot of null columns as I don't think we lose too much, by dropping them
+From my own standpoint, the most interesting insights that we can come away with are that we weren't able to find any racial favoritism amongst the patients,
 
 Thank you so much for your time and reading all of this! This was an absolute pleasure to do and if you have any questions, please comment below or please contact me at lance.inimgba@gmail.com or on [LinkedIn](https://www.linkedin.com/in/lance-inimgba-65a23a50/)!
 
