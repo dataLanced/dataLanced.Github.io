@@ -24,14 +24,17 @@ The dataset itself encompasses the total stats (not per game split) entirety of 
 
 ### Data Dictionary
 
-There are over 40 columns of data, so I will only go over the relevant ones that'll be most crucial to our data analysis for this project:
+There are over 20 columns of data, but we only need few columns to find the answers we're looking for:
 - Player : A player's name
 - Age: A player's age
-- Tm: Number of procedures that a patient has had
-- `num_lab_procedures`: Number of lab procedures that a patient has had
-- `num_medications`: Number of times that medications have been administered to a patient
+- Tm: A player's team during the 2021-22 season
+- G: Total games played
+- 3P%: Three-point shot percentage
+- TRB: Total Rebounds
+- AST: Total Assists
+- PTS: Total Points
 
-Now let's get to our given tasks and our data analysis!
+Now let's begin the data analysis section!!
 
 ## Data Analysis
 
