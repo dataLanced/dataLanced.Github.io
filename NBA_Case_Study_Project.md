@@ -26,6 +26,7 @@ The dataset itself encompasses the total stats (not per game split) entirety of 
 
 There are over 20 columns of data, but we only need few columns to find the answers we're looking for:
 - Player : A player's name
+- Pos: Player position
 - Age: A player's age
 - Tm: A player's team during the 2021-22 season
 - G: Total games played
@@ -38,17 +39,7 @@ Now let's begin the data analysis section!!
 
 ## Data Analysis
 
-### What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
-
-To start out, first we're going to create a histogram! This might sound odd to see that because SQL isn't necessarily renowned for its visualization capabilities, but there is a query we can use to produce a histogram.
-
-<img src="images/SQL Healthcare Project/query1.png?raw=true"/>
-
-We use this query to output the histogram. Note that we are using the `time_in_hospital` column as we're trying to determine whether the majority of our patients are spending less than 7 days in the hospital. Knowing that our patients are spending less than 7 days in the hospital can free up beds faster in the event of overcrowding and also save some money for both us and the patient! Let's print our histogram now.
-
-<img src="images/SQL Healthcare Project/histogram.png?raw=true"/>
-
-As we can see by the results, the majority of our patients do indeed spend less than 7 days in our hospital beds!
+First, we're going to create a scatter plot featuring all the players featuring the PTS, AST, TRB, Pos. This is how it looks like below:
 
 ---
 
