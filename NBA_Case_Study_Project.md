@@ -41,6 +41,9 @@ Now let's begin the data analysis section!!
 
 First, we're going to create a scatter plot featuring all the players featuring the PTS, AST, TRB, Pos. This is how it looks like below:
 
+
+As we cam see,
+
 ---
 
 ### Try to find out which medical specialties have the highest number of procedures on average.
