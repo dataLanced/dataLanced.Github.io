@@ -21,11 +21,7 @@ This project SQL project will show us how versatile this dataset is and tease th
 I chose this project because I was interested in a health domain-focused dataset to add to my data repository! Also, because my mother is a nurse, I have always had a curiosity for the health industry at large and always wondered how or if I could make a contribution to it without having to go to nursing or medical school! 😂
 
 ---
-For this dataset, we are using this [diabetic-focused dataset]([https://www.worldbank.org/en/home](https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008#)). This dataset is meant to focust
-
-The actual [dataset](https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx), IDA Statement Of Credits and Grants - Historical Data, is curated from the World Bank's International Development Association or IDA for short. The IDA is a department of the World Bank that is responsible for helping the world's poorest countries and provides low-interest to zero loans called "credits" along with grants to help fund projects that reduce inequalities and help improve living conditions. It also has a whopping 1.12 Million rows, so it gives us a sense of how large of a scale that the IDA is operating on.
-
-The [dataset](https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx) contains historical snapshots including the most recent snapshots of the dataset.
+For this project, we are using this [diabetic-focused dataset](https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008#). This dataset represents 10 years of data (1999-2008) and is specifically geared toward the analysis of factors regarding patient readmission and other outcomes pertaining to specifically diabetic patients. But the version that we're using is a modified version on [Kaggle](https://www.kaggle.com/code/iabhishekofficial/prediction-on-hospital-readmission/notebook) and we aren't focusing either on readmissions or diabetic-factors to complete our assigned tasks in the previous section.
 
 ### Data Dictionary
 
