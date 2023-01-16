@@ -20,7 +20,6 @@ This project SQL project will show us how versatile this dataset is and tease th
 
 I chose this project because I was interested in a health domain-focused dataset to add to my data repository! Also, because my mother is a nurse, I have always had a curiosity for the health industry at large and always wondered how or if I could make a contribution to it without having to go to nursing or medical school! 😂
 
----
 For this project, we are using this [diabetic-focused dataset](https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008#). This dataset represents 10 years of data (1999-2008) and is specifically geared toward the analysis of factors regarding patient readmission and other outcomes pertaining to specifically diabetic patients. But the version that we're using is a modified version on [Kaggle](https://www.kaggle.com/code/iabhishekofficial/prediction-on-hospital-readmission/notebook) and we aren't focusing either on readmissions or diabetic-factors to complete our assigned tasks in the previous section.
 
 ### Data Dictionary
