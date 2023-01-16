@@ -1,4 +1,4 @@
-## Healthcare Project
+# Healthcare Project
 
 <img src="images/Massachusetts Education Project.png?raw=true"/>
 
@@ -110,6 +110,21 @@ Next, I've been tasked to compile a list of patients who are either African-Amer
 
 <img src="images/SQL Healthcare Project/query8.png?raw=true"/>
 <img src="images/SQL Healthcare Project/output7.png?raw=true"/>
+
+---
+
+### Find "success stories" where patients who came into thie hospital with an emergency (`admission_type_id` is 1), but stayed less than the average time in the hospital 
+
+To find these success stories, we have to have something in our query like this: `WHERE time_in_hospital < AVG(time_in_hospital)`. But actually, this wouldn't work and it would produce an error because we can't use `AVG` in a `WHERE` clause, only in a `SELECT` clause. So we have to use a subquery to work around this. Here is an example of how we can get what we want:
+
+<img src="images/SQL Healthcare Project/query10.png?raw=true"/>
+<img src="images/SQL Healthcare Project/output10.png?raw=true"/>
+
+Subqueries are a useful tool, but they can make things look messy if we have a lot of them to manage. Therefore, we can once again use a CTE to make things more neat. Last time we used created a `VIEW`, so this time we're going to use `WITH`. We'll update the query and confirm that the output is still the same as our previous query.
+
+<img src="images/SQL Healthcare Project/query10.1.png?raw=true"/>
+<img src="images/SQL Healthcare Project/output11.png?raw=true"/>
+
 ---
 Next we've been asked to generate a query that will summarize the results of the top 50 medicated patients along with the number of lab procedures that they had(table will be ordered by `num_medications`and afterwards `num_lab_procedures`). The output of our queries should produce values in this format: 
 
