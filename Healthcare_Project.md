@@ -2,7 +2,7 @@
 
 <img src="images/Massachusetts Education Project.png?raw=true"/>
 
-In this project we are going to play the level of a newly hired health care data analyst at a hospital and because our supervisor is busy, they have given us a lot of tasks to do 
+In this project we are going to play the level of a newly hired health care data analyst at a hospital and because our supervisor is busy, they have given us a lot of tasks to handle for them
 
 - What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
 - Try to find out which medical specialties have the highest number of procedures on average.
@@ -12,13 +12,11 @@ In this project we are going to play the level of a newly hired health care data
 - Find "success stories" where patients who came into thie hospital with an emergency (`admission_type_id` is 1), but stayed less than the average time in the hospital 
 - We are asked to write a summary for the top 50 medical patients in a format like this: "Patient 2383 was Caucasian and was readmitted. They had 21 medications and 32 lab procedures."
 
-This project will be more of a walkthrough than anything else and at least prove (hopefully)that I have basic SQL skills if my other SQL projects don't convey that too well.
+This project SQL project will show us how versatile this dataset is and tease the possibilities of how much time can be spent on it. Because of all the columns that this dataset contains, there are so many insights and relationships that can be looked at and tested. But our because of "job duties", we'll just be skimming the tip of the iceberg.
 
-## Why This Project and What the data set is?
+## Why This Project and What is the Data?
 
-The reason why I personally chose this dataset is because I have a keen interest in the financial sector and it is one of the domains that I have the most curiosity in working in. So I thought it would be a good exercise in getting my feet wet and get used to some of the columns and common terminology that I could possibly be seeing in financial datasets. Plus, I thought that this would be a pretty good bit of a SQL flex as I spend most of my time in Python, I just thought that a little bit of a SQL wouldn't hurt! 💪💪💪
-
-Lastly, who doesn't like learning about finances?? 
+I chose this project because I was interested in a health domain-focused dataset to add to my data repository! Also, because my mother is a nurse, I have always had a curiosity for the health industry at large and always wondered how or if I could make a contribution to it without having to go to nursing or medical school! 😂
 
 ---
 For this dataset, we are using data from the archives of [the World Bank website](https://www.worldbank.org/en/home). In case you haven't heard of the World Bank before, they are an international financial institution that provides grants and loans to developing countries with the goal of creating sustainable development projects that will lead to more economic opportunities and the easing of poverty in said countries. 
