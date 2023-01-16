@@ -9,7 +9,7 @@ The tasks:
 - What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
 - Try to find out which medical specialties have the highest number of procedures on average.
 - Are there any racial discrepancies? (based on the number of lab procdures done)
-- Do patients who get a lot of procedures done stay longer in the hospital?
+- Do patients who get a lot of lab procedures/tests done stay longer in the hospital?
 - We want to perform a medical test on any patient who is either African-American or had an "Up" value for metformin. Please help us compile a list of patients who   meet this criteria
 - Find "success stories" where patients who came into thie hospital with an emergency (`admission_type_id` is 1), but stayed less than the average time in the hospital 
 - We are asked to write a summary for the top 50 medical patients in a format like this: "Patient 2383 was Caucasian and was readmitted. They had 21 medications and 32 lab procedures."
@@ -97,7 +97,7 @@ From these results, we can determine that there aren't any outliers that would i
 
 ---
 
-### Do patients who get a lot of procedures done stay longer in the hospital?
+### Do patients who get a lot of procedures/tests done stay longer in the hospital?
 
 Next we were asked to see if patients that have a lot of procedures done tend to have longer stay times in the hospital. First, we run a query that gives a sense of the data distribution for the `num_lab_procedures` column.
 
@@ -161,12 +161,14 @@ In conclusion, we set out to complete the tasks that our supervisor instructed u
 - What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
 - Try to find out which medical specialties have the highest number of procedures on average.
 - Are there any racial discrepancies? (based on the number of lab procdures done)
-- Do patients who get a lot of procedures done stay longer in the hospital?
+- Do patients who get a lot of procedures/tests done stay longer in the hospital?
 - We want to perform a medical test on any patient who is either African-American or had an "Up" value for metformin. Please help us compile a list of patients who   meet this criteria
 - Find "success stories" where patients who came into thie hospital with an emergency (`admission_type_id` is 1), but stayed less than the average time in the hospital 
 - We are asked to write a summary for the top 50 medical patients in a format like this: "Patient 2383 was Caucasian and was readmitted. They had 21 medications and 32 lab procedures."
 
-From my own standpoint, the most interesting insights that we can come away with are that we weren't able to find any racial favoritism amongst the patients,
+From my own standpoint, the most interesting insights that we can come away with are that we weren't able to find any racial favoritism amongst the patients, the cardiology department had by far the highest amount of admitted patients and that we were able to find a strong correlation between the number of lab procedures done and length of time spent for our patients in the hospital.
+
+I didn't know much about our patients going in to this dataset, but now I have a much firmer understanding of them thanks to this brief analysis! I'll stop here for now, but I'd definitely like to jump back into this dataset sometime in the near future.
 
 Thank you so much for your time and reading all of this! This was an absolute pleasure to do and if you have any questions, please comment below or please contact me at lance.inimgba@gmail.com or on [LinkedIn](https://www.linkedin.com/in/lance-inimgba-65a23a50/)!
 
