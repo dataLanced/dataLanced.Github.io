@@ -2,7 +2,9 @@
 
 <img src="images/Massachusetts Education Project.png?raw=true"/>
 
-In this project we are going to play the level of a newly hired health care data analyst at a hospital and because our supervisor is busy, they have given us a lot of tasks to handle for them
+In this project we are going to play the level of a newly hired health care data analyst at a hospital and because our supervisor is busy, they have given us a lot of tasks to handle for them. 
+
+The tasks:
 
 - What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
 - Try to find out which medical specialties have the highest number of procedures on average.
@@ -19,7 +21,7 @@ This project SQL project will show us how versatile this dataset is and tease th
 I chose this project because I was interested in a health domain-focused dataset to add to my data repository! Also, because my mother is a nurse, I have always had a curiosity for the health industry at large and always wondered how or if I could make a contribution to it without having to go to nursing or medical school! 😂
 
 ---
-For this dataset, we are using data from the archives of [the World Bank website](https://www.worldbank.org/en/home). In case you haven't heard of the World Bank before, they are an international financial institution that provides grants and loans to developing countries with the goal of creating sustainable development projects that will lead to more economic opportunities and the easing of poverty in said countries. 
+For this dataset, we are using this [diabetic-focused dataset]([https://www.worldbank.org/en/home](https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008#)). This dataset is meant to focust
 
 The actual [dataset](https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx), IDA Statement Of Credits and Grants - Historical Data, is curated from the World Bank's International Development Association or IDA for short. The IDA is a department of the World Bank that is responsible for helping the world's poorest countries and provides low-interest to zero loans called "credits" along with grants to help fund projects that reduce inequalities and help improve living conditions. It also has a whopping 1.12 Million rows, so it gives us a sense of how large of a scale that the IDA is operating on.
 
