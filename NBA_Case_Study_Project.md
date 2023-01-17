@@ -8,7 +8,7 @@ This project is something that I feel personally excited about is because I thro
 
 Here are just some of the things that I took away from my interactions with the data:
 
-- Nikola Jokic, Jayson Tatum, Josh Giddey and Draymond Green are very interesting and productive outliers considering the position that they play.
+- Both Nikola Jokic and Jayson Tatum are very dominant outliers.
 - Anthony Edwards is very similar to Zach Lavine and Donovan Mitchell but at least 5 years younger!
 - Sacramento Kings have the best 3-point shooting power forwards in the league!
 - Joel Embiid and Demar Derozan stand out a lot! Find out why!
@@ -45,27 +45,31 @@ First, we're going to create a scatter plot featuring all the players featuring 
 
 <img src="images/NBA Project/Bubble.png?raw=true"/>
 
+For an [interactive graph](https://public.tableau.com/views/NBAData_16721838798380/Bubble?:language=en-US&:display_count=n&:origin=viz_share_link)
 
-<div class='tableauPlaceholder' id='viz1673917308627' style='position: relative'><noscript><a href='#'><img alt='Bubble ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAData_16721838798380&#47;Bubble&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBAData_16721838798380&#47;Bubble' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAData_16721838798380&#47;Bubble&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1673917308627');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+Assuming that you're viewing the interactice graph using the link that I provided, we can see that Trae Young had both the highest amount of points and assists in the 2021-22 NBA regular season and played in 76 out of 82 games. From what we can see, Trae Young has the highest offensive output, but we don't exactly know what that signifies yet. All we can say is that, he is probably at least the most important player on his team and wouldn't necessarily be a reasonable option to try and acquire.
 
+There are some outlier players out there though like too. First of all let's  let's take a look Nikola Jokic (PTS 2004, AST 584 on the graph) . Note that he's a center, and while he has a high amount of rebounds as expected as a center(in fact, the highest total), he also has more assists than even most point guards! Another outlier I'd like to look at is Jayson Tatum, too because he seems to be far and away the best SF (small forward) on the chart. He has the most points of any SF, he's top 3 in assists at SF as well and he also has the most rebounds of any of his SF peers.
 
-
-Keep in note that if we were to hover the points in the actual Tableau software itself, we'd be able to see more column details that can't be conveyed on the static graph screenshot above. So according to this graph, we can see that Trae Young had both the highest amount of points and assists in the 2021-22 NBA regular season and played in 76 out of 82 games. From what we can see, Trae Young has the highest offensive output, but we don't exactly know what that signifies yet. All we can say is that, he is probably at least the most important player on his team and wouldn't necessarily be a reasonable option to try and acquire.
-
-There are some outlier players out there though Nikola Jokic too. Note that according
+Another interesting thing that I gleaned was I was also able to observe that Anthony Edwards, a SG (shooting guard), is among the top SGs in the league at only 20 years old and if you observe the graph, he is seemingly on the same trajectory as players like Donovan Mitchell and Zach Lavine who are several years older than him.
 
 ---
 
-### Try to find out which medical specialties have the highest number of procedures on average.
+Next we're going to construct a heatmap that will display the top three-point percentages of every position for each team in the league
 
-Now with this line of code we're going to check out the distinct values (or fields) in the `medical_specialty` column using the following query.
-<img src="images/SQL Healthcare Project/query2.png?raw=true"/>
-<img src="images/SQL Healthcare Project/output1.png?raw=true"/>
+<img src="images/NBA Project/Heatmap.png?raw=true"/>
 
-I also counted the unique values in the `medical_specialty` column and it turns out that we have 73 distinct values.
+For an [interactive graph](https://public.tableau.com/views/NBAData_16721838798380/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
-Now that we know what those are, let's create a query that groups all the values of `medical_specialty` together and find the average `num_procedures` per specialty. We also want to count how many patients there are per specialty (please note that one row in this dataset represents one patient).
+If we wanted to add a PF to our team, I would look no further than than addding one from the Sacramento Kings roster because as a position they are shooting 50% from three-point range collectively. The team that I represent, the Minnesota Timberwolves, is weak at three-point shooting at the PF position, so getting a PF from the Kings would represent a huge upgrade to us.
 
+---
+
+Another chart that we can look at to see players who stand out on their team is ccalled a stacked bar chart. We are going to create a bar chart for each individual team's total points and then from there, separate out the bars by the individual players on each team and color code them to make them easier to understand.
+
+<img src="images/NBA Project/StackedBar.png?raw=true"/>
+
+[Interactive version](https://public.tableau.com/views/NBAData_16721838798380/StackedBarChart?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 And here are a few lines of the output
 
@@ -182,5 +186,5 @@ I'm actively looking for new opportunities in the data science field, so please 
 
 
 
-
+<div class='tableauPlaceholder' id='viz1673999701051' style='position: relative'><noscript><a href='#'><img alt='Stacked Bar Chart ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAData_16721838798380&#47;StackedBarChart&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBAData_16721838798380&#47;StackedBarChart' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAData_16721838798380&#47;StackedBarChart&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1673999701051');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
