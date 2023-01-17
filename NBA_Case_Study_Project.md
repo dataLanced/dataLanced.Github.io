@@ -8,7 +8,7 @@ This project is something that I feel personally excited about is because I thro
 
 Here are just some of the things that I took away from my interactions with the data:
 
-- Tyrese Haliburton, Nikola Jokic, Jayson Tatum, Josh Giddey and Draymond Green are very interesting and productive outliers considering the position that they play.
+- Nikola Jokic, Jayson Tatum, Josh Giddey and Draymond Green are very interesting and productive outliers considering the position that they play.
 - Anthony Edwards is very similar to Zach Lavine and Donovan Mitchell but at least 5 years younger!
 - Sacramento Kings have the best 3-point shooting power forwards in the league!
 - Joel Embiid and Demar Derozan stand out a lot! Find out why!
@@ -39,10 +39,20 @@ Now let's begin the data analysis section!!
 
 ## Data Analysis
 
-First, we're going to create a scatter plot featuring all the players featuring the PTS, AST, TRB, Pos. This is how it looks like below:
+So let's imagine that we're trying to find potential free agent signings based on their performances last season.
+
+First, we're going to create a scatter plot featuring all the players featuring the PTS, AST, TRB, Pos and G columns. This is how it looks like below:
+
+<img src="images/NBA Project/Bubble.png?raw=true"/>
 
 
-As we cam see,
+<div class='tableauPlaceholder' id='viz1673917308627' style='position: relative'><noscript><a href='#'><img alt='Bubble ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAData_16721838798380&#47;Bubble&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBAData_16721838798380&#47;Bubble' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAData_16721838798380&#47;Bubble&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1673917308627');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+
+Keep in note that if we were to hover the points in the actual Tableau software itself, we'd be able to see more column details that can't be conveyed on the static graph screenshot above. So according to this graph, we can see that Trae Young had both the highest amount of points and assists in the 2021-22 NBA regular season and played in 76 out of 82 games. From what we can see, Trae Young has the highest offensive output, but we don't exactly know what that signifies yet. All we can say is that, he is probably at least the most important player on his team and wouldn't necessarily be a reasonable option to try and acquire.
+
+There are some outlier players out there though Nikola Jokic too. Note that according
 
 ---
 
@@ -56,7 +66,6 @@ I also counted the unique values in the `medical_specialty` column and it turns 
 
 Now that we know what those are, let's create a query that groups all the values of `medical_specialty` together and find the average `num_procedures` per specialty. We also want to count how many patients there are per specialty (please note that one row in this dataset represents one patient).
 
-<img src="images/SQL Healthcare Project/query3.png?raw=true"/>
 
 And here are a few lines of the output
 
