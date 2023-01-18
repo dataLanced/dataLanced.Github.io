@@ -51,21 +51,21 @@ Assuming that you're viewing the interactice graph using the link that I provide
 
 There are some outlier players out there though like too. First of all let's  let's take a look Nikola Jokic (PTS 2004, AST 584 on the graph) . Note that he's a center, and while he has a high amount of rebounds as expected as a center(in fact, the highest total), he also has more assists than even most point guards! Another outlier I'd like to look at is Jayson Tatum, too because he seems to be far and away the best SF (small forward) on the chart. He has the most points of any SF, he's top 3 in assists at SF as well and he also has the most rebounds of any of his SF peers.
 
-Another interesting thing that I gleaned was I was also able to observe that Anthony Edwards, a SG (shooting guard), is among the top SGs in the league at only 20 years old and if you observe the graph, he is seemingly on the same trajectory as players like Donovan Mitchell and Zach Lavine who are several years older than him.
+Another interesting thing that I gleaned was I was also able to observe that Anthony Edwards, a SG (shooting guard), is among the top SGs in the league at only 20 years old and if you observe the graph, he is seemingly on the same trajectory as players like Donovan Mitchell and Zach Lavine who are several years older than him. We are extremely fortunate to have him and I think we should provide all the resources he needs to ensure that he reaches his potential.
 
 ---
 
-Next we're going to construct a heatmap that will display the top three-point percentages of every position for each team in the league
+Next we want to find ways in which we can improve our three-point shooting percentage, so we are going to construct a heatmap that will display the top three-point percentages of every position for each team in the league.
 
 <img src="images/NBA Project/Heatmap.png?raw=true"/>
 
-For an [interactive graph](https://public.tableau.com/views/NBAData_16721838798380/Sheet1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+For an [interactive graph](https://public.tableau.com/views/NBAData_16721838798380/Heatmap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 If we wanted to add a PF to our team, I would look no further than than addding one from the Sacramento Kings roster because as a position they are shooting 50% from three-point range collectively. The team that I represent, the Minnesota Timberwolves, is weak at three-point shooting at the PF position, so getting a PF from the Kings would represent a huge upgrade to us.
 
 ---
 
-Another chart that we can look at to see players who stand out on their team is ccalled a stacked bar chart. We are going to create a bar chart for each individual team's total points and then from there, separate out the bars by the individual players on each team and color code them to make them easier to understand.
+Another chart that we can create to observe players who stand out on their team is called a stacked bar chart. We are going to create a bar chart for each individual team's total points and then from there, separate out the bars by the individual players on each team and color code them to make them easier to understand. So in other words, this chart will allow us to see which players contributing to their team's total points the most.
 
 <img src="images/NBA Project/StackedBar.png?raw=true"/>
 
@@ -75,106 +75,35 @@ Some quick things that we can see are that my team, the Minnesota Timberwolves, 
 
 But we can also see how many points that individuals players contributes to the point total of their individual teams. The player who stands out to me is Joel Embiid of the Philadelphia 76ers. As a group, the 76ers scored just over 9,000 points for the entire season and Joel Embiid contributed to nearly 2,100 points of those 9,000 by himself! That is a remarkable contriubtion and would definitely help out my Minnesota Timberwolves if we were able to acquire him.
 
----
-<img src="images/SQL Healthcare Project/query4.1.png?raw=true"/>
-<img src="images/SQL Healthcare Project/output3.png?raw=true"/>
+It's interesting to see the contrast of team's like the 76ers that rely mostly on one main scorer over teams like Charlotte, Toronto and Memphis that rely on three main scorers. Another interesting question that we can save for another time is whether teams that can split up the scoring more are more successful than teams that have one dominant scorer.
 
-Just as planned! We now have 5 specialties that were able to meet our rigorous criteria and as we can see from both the `avg_procedures` and `rows_count` columns, a lot of patients are treated in these specialties and they get at least 2.5 procedures too. These are amazing results and I'm quite sure that the supervisor will be delighted with these results!
 
 ---
 
-### Are there any racial discrepancies? (based on the number of lab procedures done)
+Lastly, we want to add players who can help improve upon the assist numbers for the Timberwolves last season. So to do this, we are going to take a look at another visualization known as a treemap and see what we can take away from it.
+<img src="images/NBA Project/Treemap.png?raw=true"/>
 
-Next, our supervisor has asked us to check to see if there are any discrepancies in treatment based on race. For this purpose, we will use the `num_lab_procedures` that patients from all racial backgrounds are receiving the highest quality treatment. The table that we have been using until now, `patient`, doesn't have any information that outlines a person's racial background. Therefore, we will use another table called `demographics` employing the SQL inner join technique along the shared `patient_nbr` column to ensure that we can properly align the demographic info of the new table to the parent table. The `patient_nbr` column is our primary key for both tables, so we know that the values present are all unique.  
+[Interactive version](https://public.tableau.com/app/profile/lance.inimgba/viz/NBAData_16721838798380/Treemap?publish=yes)
 
-<img src="images/SQL Healthcare Project/query5.png?raw=true"/>
+Immediately upon looking at the treemap, Nikola Jokic, the player who stood out to us on the bubble visualization (the first one) we created earlier, once again stands out here. He has by far the highest assist total at the C (center) position and has more assists than the top assist leaders for every position except PG (point guard) and some of the combo positions (like PF-C, PG-SG, etc.)
 
-For this query, we created a CTE and used it in a view to use for future reference and set up our join and the columns to be displayed from said join. Next we want to take that view and create a query that categorizes our database by race and uses the average of `num_lab_procedures`and we can determine whether all of our patients are getting equal treatment.
-
-Here is the query:
-
-<img src="images/SQL Healthcare Project/query6.png?raw=true"/>
-
-And the output:
-
-<img src="images/SQL Healthcare Project/output4.png?raw=true"/>
-
-From these results, we can determine that there aren't any outliers that would indicate the presence of preferential treatment due to racial makeup. Now let's move further in our analysis.
-
----
-
-### Do patients who get a lot of procedures/tests done stay longer in the hospital?
-
-Next we were asked to see if patients that have a lot of procedures done tend to have longer stay times in the hospital. First, we run a query that gives a sense of the data distribution for the `num_lab_procedures` column.
-
-<img src="images/SQL Healthcare Project/query7.png?raw=true"/>
-
-
-<img src="images/SQL Healthcare Project/output5.png?raw=true"/>
-
-From the output, we can see that `num_lab_procedures` has an average value of around 43 procedures. With this knowledge, we can use a series of `CASE` statements to categorize our patients based on their `num_lab_procedures` value. If a value for `num_lab_procedures` falls within 0-24 it will be assigned the tag of "few", for 25-54: "average", for over 55: "many".
-
-Now we are going to create a query that creates these tags for every patient, groups all of them by these tags and looks at the average hospital stay per group. Now, let's look at that query and its output together
-
-<img src="images/SQL Healthcare Project/query7.png?raw=true"/>
-<img src="images/SQL Healthcare Project/output6.png?raw=true"/>
-
-From what we have seen, we can now draw a positive correlation between time spent in the hospital and how many procedures that they have. The longer a patient stays at a hospital the more procedures they have and the shorter their stay, the fewer procedures they have.
-
----
-### We want to perform a medical test on any patient who is either African-American or had an "Up" value for metformin. Please help us compile a list of patients who   meet this criteria
-
-Next, I've been tasked to compile a list of patients who are either African-American or have a value of "Up" for the `metformin` column. Here is a simple query that we can use, making use of the `UNION` function. Some lines of the output will also be displayed.
-
-<img src="images/SQL Healthcare Project/query8.png?raw=true"/>
-<img src="images/SQL Healthcare Project/output7.png?raw=true"/>
-
----
-
-### Find "success stories" where patients who came into the hospital with an emergency (`admission_type_id` is 1), but stayed less than the average time in the hospital 
-
-To find these success stories, we have to have something in our query like this: `WHERE time_in_hospital < AVG(time_in_hospital)`. But actually, this wouldn't work and it would produce an error because we can't use `AVG` in a `WHERE` clause, only in a `SELECT` clause. So we have to use a subquery to work around this. Here is an example of how we can get what we want:
-
-<img src="images/SQL Healthcare Project/query10.png?raw=true"/>
-<img src="images/SQL Healthcare Project/output10.png?raw=true"/>
-
-Subqueries are a useful tool, but they can make things look messy if we have a lot of them to manage. Therefore, we can once again use a CTE to make things more neat. Last time we created a `VIEW`, so this time we're going to use `WITH`. We'll update the query and confirm that the output is still the same as our previous query.
-
-<img src="images/SQL Healthcare Project/query10.1.png?raw=true"/>
-<img src="images/SQL Healthcare Project/output11.png?raw=true"/>
-
-With the help of the `WITH` CTE our subquery has now been condensed from `(SELECT AVG(time_in_hospital) FROM health)` to just `(SELECT * FROM avg_time)`. 
-
-And we also have a nice list of "success story" patients to provide to our supervisor too!
-
----
-Next we've been asked to generate a query that will summarize the results of the top 50 medicated patients along with the number of lab procedures that they had(table will be ordered by `num_medications`and afterwards `num_lab_procedures`). The output of our queries should produce values in this format: 
-
-### We are asked to write a summary for the top 50 medical patients in a format like this: "Patient 2383 was Caucasian and was readmitted. They had 21 medications and 32 lab procedures."
-
-Using a combination of `CONCAT` and `CASE`, we will be able to generate multiple summaries like this. Here is the query and the output below:
-
-<img src="images/SQL Healthcare Project/query11.png?raw=true"/>
-<img src="images/SQL Healthcare Project/output9.png?raw=true"/>
-
+And while we're on the topic of combo positions, another player who stood out to me was Tyrese Haliburton who is a SG-PG combo and one of the few on this dataset. He has more assists than all but three "pure" PG players and he has over 1.5 times more assists than the leading "pure" SG. If we could add a player to improve our assist total, I think that he's the one to add. Because not only will he add more assists to our team, but looking at the bubble visualization once again, he will also add a good amount of scoring as well!
 
 ---
 
 ## Recap/Conclusion
 
-In conclusion, we set out to complete the tasks that our supervisor instructed us to and we've done just that. To review what was asked of us, let's refresh our memories with the below tasks:
+In conclusion, I set out to analyze the performances of player stats during the 2021-22 season to find opportunities to improve the Minnesota Timberwolves. And I was also able to show why and how:
 
-- What does the time spent in the hospital look like? Are the majority of our patients spending less than 7 days?
-- Try to find out which medical specialties have the highest number of procedures on average.
-- Are there any racial discrepancies? (based on the number of lab procedures done)
-- Do patients who get a lot of procedures/tests done stay longer in the hospital?
-- We want to perform a medical test on any patient who is either African-American or has an "Up" value for metformin. Please help us compile a list of patients who   meet this criteria
-- Find "success stories" where patients who came into the hospital with an emergency (`admission_type_id` is 1), but stayed less than the average time in the hospital 
-- We are asked to write a summary for the top 50 medical patients in a format like this: "Patient 2383 was Caucasian and was readmitted. They had 21 medications and 32 lab procedures."
+- Nikola Jokic and Jayson Tatum are amazing talents
+- Anthony Edwards has a shot of being the best SG in the NBA
+- The Sacramento Kings have the best 3-point shooting power forwards in the league!
+- Joel Embiid is such a huge contributor for his team
+- Some shooting guards actually have more assists than some point guards!
 
-From my own standpoint, the most interesting insights that we can come away with are that we weren't able to find any racial favoritism amongst the patients, the cardiology department had by far the highest amount of admitted patients and that we were able to find a strong correlation between the number of lab procedures done and length of time spent for our patients in the hospital.
+Overall, I hope that this provided a clearer picture on how we can use data to evaluate talent in the NBA and how it can actually be used in NBA team front-offices to build stronger teams that will hopefully ultimately result in a more successful season and entertaining product for fans to watch. As a basketball fan myself, I still think that the "eye-test" of having actual knowledge of the game can't be completely supplanted by data, but both facets are complementary in assembling a successul NBA organization and building a championship team.
 
-I didn't know much about our patients going into this dataset, but now I have a much firmer understanding of them thanks to this brief analysis! I'll stop here for now, but I'd definitely like to jump back into this dataset sometime in the near future.
+There are still a lot of other things that can be evaluated and tested, so I may re-visit this dataset in the near future!
 
 Thank you so much for your time and reading all of this! This was an absolute pleasure to do and if you have any questions, please comment below or please contact me at lance.inimgba@gmail.com or on [LinkedIn](https://www.linkedin.com/in/lance-inimgba-65a23a50/)!
 
