@@ -1,6 +1,6 @@
 ## Bank Loan Project
 
-<img src="images/Massachusetts Education Project.png?raw=true"/>
+<img src="images/ida_banner.png?raw=true"/>
 
 In this project, I will be assuming the role of a new hire on a bank they've asked me to fulfill these basic tasks as to get a feel from where I'm at:
 
