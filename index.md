@@ -1,8 +1,18 @@
 # My Data Analytics Portfolio
 
 ---
+#### [NBA Analytics Project](/NBA_Case_Study_Project.md)
+<img src="images/NBA_Banner.png?raw=true"/>
+For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
+
+---
+#### [Healthcare Project](/Healthcare_Project.md)
+<img src="images/SQL Healthcare Project.png?raw=true"/>
+For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
+
+---
 #### [Bank Project](/Bank_Loan_Project.md)
-<img src="images/21 Days To Data Challenge.png?raw=true"/>
+<img src="images/ida_banner.png?raw=true"/>
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
 
 ---
