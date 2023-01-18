@@ -1,6 +1,6 @@
 # NBA Analytics Project
 
-<img src="images/Massachusetts Education Project.png?raw=true"/>
+<img src="images/NBA_Banner.png.png?raw=true"/>
 
 For this project I am going to assume the role of an entry-level data analyst interviewee for my hometown NBA team, the Minnesota Timberwolves. My goal is to display how we can use data to try to add potential talent to our team and we will display how we can using Tableau.
 
