@@ -1,6 +1,6 @@
 # Healthcare Project
 
-<img src="images/Massachusetts Education Project.png?raw=true"/>
+<img src="images/SQL Healthcare Project.png?raw=true"/>
 
 In this project we are going to play the level of a newly hired healthcare data analyst at a hospital and because our supervisor is busy, they have given us a lot of tasks to handle for them. 
 
