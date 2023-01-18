@@ -1,4 +1,4 @@
-# NBA Case Study Project
+# NBA Analytics Project
 
 <img src="images/Massachusetts Education Project.png?raw=true"/>
 
