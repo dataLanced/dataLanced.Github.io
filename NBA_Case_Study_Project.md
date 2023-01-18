@@ -11,7 +11,7 @@ Here are just some of the things that I took away from my interactions with the 
 - Both Nikola Jokic and Jayson Tatum are very dominant outliers.
 - Anthony Edwards is very similar to Zach Lavine and Donovan Mitchell but at least 5 years younger!
 - Sacramento Kings have the best 3-point shooting power forwards in the league!
-- Joel Embiid and Demar Derozan stand out a lot! Find out why!
+- Joel Embiid stands out a lot! Find out why!
 - Some shooting guards actually have more assists than some point guards!
 
 In the upcoming data analyis section, I'll explain how I came away with these insights! If you're a hard core hoops fan though, I'll warn you in advance, but your favorite all-star caliber players might not stand out as much as you think—at least in this brief analytics project!
@@ -71,14 +71,11 @@ Another chart that we can look at to see players who stand out on their team is 
 
 [Interactive version](https://public.tableau.com/views/NBAData_16721838798380/StackedBarChart?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
-And here are a few lines of the output
+Some quick things that we can see are that my team, the Minnesota Timberwolves, scored the most points collectively in the NBA and the Oklahoma City Thunder collectively scored the fewest points as a team.
 
-<img src="images/SQL Healthcare Project/output2.png?raw=true"/>
+But we can also see how many points that individuals players contributes to the point total of their individual teams. The player who stands out to me is Joel Embiid of the Philadelphia 76ers. As a group, the 76ers scored just over 9,000 points for the entire season and Joel Embiid contributed to nearly 2,100 points of those 9,000 by himself! That is a remarkable contriubtion and would definitely help out my Minnesota Timberwolves if we were able to acquire him.
 
-Not only does it look more organized now, but we are closer to our next goal of answering which specialties have the highest number of procedures on average. So let's say that our supervisor instructs us to filter down to specialties that have at least 50 patients and an average of at least 2.5 procedures per patient for a given specialty. With this we should have a great idea on what specialties to focus on! 
-
-So let's put this concept into a query and see what we get.
-
+---
 <img src="images/SQL Healthcare Project/query4.1.png?raw=true"/>
 <img src="images/SQL Healthcare Project/output3.png?raw=true"/>
 
@@ -183,8 +180,4 @@ Thank you so much for your time and reading all of this! This was an absolute pl
 
 I'm actively looking for new opportunities in the data science field, so please don't hesitate to contact me if you know of anything out there!
 
-
-
-
-<div class='tableauPlaceholder' id='viz1673999701051' style='position: relative'><noscript><a href='#'><img alt='Stacked Bar Chart ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAData_16721838798380&#47;StackedBarChart&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBAData_16721838798380&#47;StackedBarChart' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAData_16721838798380&#47;StackedBarChart&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1673999701051');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
