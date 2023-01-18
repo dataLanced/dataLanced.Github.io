@@ -1,5 +1,9 @@
 # My Data Analytics Portfolio
 
+#### [NBA Analytics Project](/AppIdeas.ipynb)
+<img src="images/App_banner.png?raw=true"/>
+For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more.
+
 ---
 #### [NBA Analytics Project](/NBA_Case_Study_Project.md)
 <img src="images/NBA_Banner.png?raw=true"/>
