@@ -101,9 +101,9 @@ In conclusion, I set out to analyze the performances of player stats during the 
 - Joel Embiid is such a huge contributor for his team
 - Some shooting guards actually have more assists than some point guards!
 
-Overall, I hope that this provided a clearer picture on how we can use data to evaluate talent in the NBA and how it can actually be used in NBA team front-offices to build stronger teams that will hopefully ultimately result in a more successful season and entertaining product for fans to watch. As a basketball fan myself, I still think that the "eye-test" of having actual knowledge of the game can't be completely supplanted by data, but both facets are complementary in assembling a successul NBA organization and building a championship team.
+Overall, I hope that this provided a clearer picture on how we can use data to evaluate talent in the NBA and how it can actually be used in NBA team front-offices to build stronger squads that will hopefully ultimately result in a more successful season and entertaining product for fans to watch. As a basketball fan myself, I still think having an "eye" for talent and having actual knowledge of the game can't be completely supplanted by data, but both facets are complementary in assembling a successul NBA organization and building a championship team.
 
-There are still a lot of other things that can be evaluated and tested, so I may re-visit this dataset in the near future!
+Obviously on the corporate-level, there are entire data teams dedicated to acquiring talent on NBA teams, so finding the best possible fits for each team isn't nearly as striaghtforward as some parts of this project made it see. But as far as deeper dives are concernced, this dataset is quite ripe fot the pickings, so I may re-visit this dataset in the near future!
 
 Thank you so much for your time and reading all of this! This was an absolute pleasure to do and if you have any questions, please comment below or please contact me at lance.inimgba@gmail.com or on [LinkedIn](https://www.linkedin.com/in/lance-inimgba-65a23a50/)!
 
