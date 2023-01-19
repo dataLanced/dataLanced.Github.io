@@ -1,6 +1,6 @@
 # My Data Analytics Portfolio
 
-#### [App Idea Analytics Project](https://github.com/dataLanced/dataLanced.Github.io/blob/master/AppIdeas.ipynb)
+#### [App Idea Analytics Project](/AppStore.md)
 <img src="images/App_banner.png?raw=true"/>
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more.
 
