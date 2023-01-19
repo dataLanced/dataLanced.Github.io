@@ -1,7 +1,7 @@
 # My Data Analytics Portfolio
 
 
-#### [I-94 Traffic Volume Analyis Project](/I94_Analysis/I-94.md)
+#### [I-94 Traffic Volume Analyis Project](/I94_Analysis/I94.md)
 <img src="/images/I-94_banner.png?raw=true"/>
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more.
 
