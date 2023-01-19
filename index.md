@@ -1,8 +1,17 @@
 # My Data Analytics Portfolio
 
+
+#### [I-94 Traffic Volume Analyis Project](/I94_Analysis/I-94.md)
+<img src="https://i.imgur.com/GcK6W4U.png?raw=true"/>
+For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more.
+
+---
+
 #### [Ebay Used Car Analytics Project](/Basics/usedcars.md)
 <img src="https://i.imgur.com/GcK6W4U.png?raw=true"/>
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more.
+
+---
 
 #### [App Idea Analytics Project](/AppStore.md)
 <img src="images/App_banner.png?raw=true"/>
