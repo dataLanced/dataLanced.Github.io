@@ -2,6 +2,8 @@
 
 <img src="images/NBA_Banner.png?raw=true"/>
 
+***IMPORTANT NOTE!! You may right click on any of the images and click "Open image in new tab" to enlarge any of the images below***
+
 For this project I am going to assume the role of an entry-level data analyst interviewee for my hometown NBA team, the Minnesota Timberwolves. My goal is to display how we can use data to try to add potential talent to our team and we will display how we can using Tableau.
 
 This project is something that I feel personally excited about because I thoroughly love all things sports and seeing how integral that data science has become across all across sports. It has actually led to teams improvement by acquiring players and even aiding in individual player development. Since I'm interested in this domain, I'd like to continue doing hobby projects and maybe work for some team's front office perhaps!
