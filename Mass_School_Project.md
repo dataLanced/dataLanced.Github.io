@@ -2,6 +2,9 @@
 
 <img src="images/Massachusetts Education Project.png?raw=true"/>
 
+***IMPORTANT NOTE!! You may right click on any of the images and click "Open image in new tab" to enlarge any of the images below***
+
+
 In this project, I will be assuming the role of a new hire on the Massachusetts Department of Education data team. I've been asked with doing the following by a fictional superintendent:
   - What schools are struggling the most?
   - What are the top math schools in the state?
@@ -41,6 +44,7 @@ According to our findings, these 4 districts met our above 50 percent threshold:
 - Community Day Charter Public School- Prospect (District)
 - Community Day Charter Public School- Gateway (District)
 - Orleans
+
 ---
  #### How does class size affect college admission?
  
