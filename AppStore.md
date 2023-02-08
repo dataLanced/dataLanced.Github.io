@@ -1,4 +1,4 @@
- # What Makes a "Killer App"?
+# What Makes a "Killer App"?
  
 ![Image](https://i.imgur.com/wxc4mct.png)
 
