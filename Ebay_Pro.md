@@ -1,4 +1,4 @@
-# German eBar Car Sales Analysis
+# German eBay Car Sales Analysis
 
 ![image](https://i.imgur.com/GcK6W4U.png)
 
