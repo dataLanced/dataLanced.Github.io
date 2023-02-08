@@ -1,4 +1,5 @@
  # What Makes a "Killer App"?
+ 
 ![Image](https://i.imgur.com/wxc4mct.png)
 
 The aim of this project is to build a free app for our customers that will allow us to attract the most possible users, hence maximizing our revenue. To do this, we will take a look at existing apps on both the Apple App Store and the Google Play Store, analyze, interpret and synthesize the data and use the results to influence how we go about building our app.
