@@ -2,6 +2,9 @@
 
 <img src="images/SQL Healthcare Project.png?raw=true"/>
 
+***IMPORTANT NOTE!! You may right click on any of the images and click "Open image in new tab" to enlarge any of the images below***
+
+
 In this project we are going to play the level of a newly hired healthcare data analyst at a hospital and because our supervisor is busy, they have given us a lot of tasks to handle for them. 
 
 The tasks:
