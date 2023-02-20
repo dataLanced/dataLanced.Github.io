@@ -56,6 +56,10 @@ Analyzing this plot, I have to conclude that there isn't really a relationship b
 
 So at this point, I would inform the superintendent that we should focus on building better schools or improve existing schools for economically disadvantaged students rather than building more schools.
 
+<img src="images/Dashboard 2.png?raw=true"/>
+
+***The full dashboard of our data visualizations***
+
 ## Recap/Conclusion
 
 Once again to recap what we were instructed to do:
